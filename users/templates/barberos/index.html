@@ -65,17 +65,16 @@
 
     </nav>
 
-<section>
-   
-
+<section id="inicio">
+  
     <div class="contenedor__slider">
-        
+       
         <div class="slider__caja cajaa1 active">
             <div class="info1">
                 <h3 class="titulo"><span class="typed"></span> a Elegant Cut</h3>
                
                 <br>
-                <p>Lorem, ipsum doolor sit amet consectetur adipisicing elit. Aut autem, fugiat quidem soluta <br> officiis dolorum consectetur ea voluptate sint commodi corporis dolore ad, <br> ut molestias corrupti eos numquam quod recusandae.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut autem, fugiat quidem soluta <br> officiis dolorum consectetur ea voluptate sint commodi corporis dolore ad, <br> ut molestias corrupti eos numquam quod recusandae.</p>
                 <div class="contenedor__botones">
                     <a href="https://www.whatsapp.com/?lang=es">
 
@@ -93,6 +92,45 @@
 
 </section>
 
+<br>
+
+<section id="serv1">
+
+    <table class="table table-hover">
+        <div class="tabla">
+          <section class="container">
+            <table class = table table-hover>
+              <tr>
+                <th>idServicio</th>
+                <th>nombreServicio</th>
+                <th>img</th>
+                <th>descripcionServicio</th>
+                <th scope="col">Modificar</th>
+                <th scope="col">Eliminar</th>
+              </tr>
+              {% for s in servicios %}
+              <tr>
+                <td>{{s.idServicio}}</td>
+                <td>{{s.nombreServicio}}</td>
+                <td><img src = {{s.img.url}} width="200">
+                </td>
+                <td>{{s.descripcionServicio}}</td>
+                <td><a href="{% url 'modificar_servicio' s.idServicio %}">Modificar</a></td>
+                <td><a href="{% url 'delete' s.idServicio %}">Eliminar</a></td>
+
+              </tr>
+              {% endfor %}
+            </table>
+          </section>
+        </div>
+      </div>
+
+      <table class="table table-hover">
+
+        <h2 id = "agregarser"><a href="{%url 'form_servicio'%}">Agregar Servicios</a></h2>
+
+</section>
+<br>
 
 
     <div class="container">
@@ -304,7 +342,7 @@
                     <textarea name="mensaje_contacto" id="mensaje_contacto" cols="30" rows="10"></textarea>
                     <br>
                     <br>
-                    <label for="avisos_contacto">¿Esta Seguro?</label>
+                    <label for="avisos_contacto">Esta Seguro?</label>
                     <input type="checkbox" name="avisos_contacto" id="avisos_contacto"> <br>
                     <button type="button" id="btn_contacto">Enviar</button>
                 </form>
