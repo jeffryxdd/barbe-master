@@ -36,9 +36,9 @@ def form_Servicio(request):
         formulario = ServicioForm(request.POST or None, request.FILES or None) #Carga de archivos        
         if formulario.is_valid():
             formulario.save() #inserta la BD
-            datos['mensaje'] = 'Se guardó Servicio'
+            datos['mensaje'] = 'Se guardó Producto'
         else:
-            datos['mensaje'] = 'NO se guardó Servicio'
+            datos['mensaje'] = 'NO se guardó Producto'
     
     return render(request, "barberos/formulario.html",datos)
 
@@ -54,7 +54,7 @@ def modificar_servicio(request, id):
             servicio.save()
             datos['mensaje'] = 'Modificado Correctamente'
         else:           
-            datos['mensaje'] = 'NO se modificó Servicio'
+            datos['mensaje'] = 'NO se modificó producto'
 
 
     return render(request, 'barberos/modificar-servicio.html', datos)
