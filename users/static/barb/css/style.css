@@ -21,27 +21,6 @@
         height: 100vh;
     }
     
-    .agregarser h2 {
-        display: block;
-        text-align: center;
-        color: white;
-        text-decoration: none;
-        font-size: 22px;
-        font-weight: 700;
-        padding: 16px;
-        margin-left: 800px;
-        margin-right: 800px;
-        border-radius: 1rem;
-        background-color: #353535;
-        opacity: 0.9;
-    }
-    
-    .agregarser a:hover {
-        background-color: #7F6295;
-        color: whitesmoke;
-    }
-    
-
     .tarjeta {
         background-color: aliceblue;
         width: 100%;
@@ -824,10 +803,5 @@
     }
     
     .barberos h3 {
-        align-content: center;
-    }
-
-
-    .serv1 a{
         align-content: center;
     }
