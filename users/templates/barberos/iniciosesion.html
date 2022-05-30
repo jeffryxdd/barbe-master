@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{%static 'barb/css/style.css'%}">
+    
+    <title>Login</title>
+</head>
+<body class="inicio">
+      <div class="login-container">
+          <div class="login-info-container">
+            <h1 class="title">Inicia Sesion</h1>
+           
+           
+            <form class="inputs-container" id="formulario_contacto">
+                <input class="input" type="text" name="email" id= "email" placeholder="Correo">
+                <input class="input" type="password" name="password" id="password" placeholder="Contraseña">
+                <p>Olvido la contraseña? <span class="span">Haz click</span></p>
+                <button class="btn">login</button>
+                <p>¿No tienes cuenta? Haz click 
+                    <a href="registro.html"><span class="span">Registrar</span></p></a>
+            </form>
+          </div>
+            <img class="image-container" src="{%static 'barb/img/inicio5.png' %}" alt="">
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+      <script src="{%static 'barb/js/traducciones.js'%}"></script>
+      <script src="{%static 'barb/js/jquery.js'%}"></script>
+
+</body>
+</html>

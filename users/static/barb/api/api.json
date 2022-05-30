@@ -1,0 +1,22 @@
+{
+    "categories": [{
+            "idCategory": "1",
+            "strCategory": "Mauricio Riquelme",
+            "strCategoryThumb": "img/apifoto1.png",
+            "strCategoryDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident dolorum totam, ipsum quisquam cupiditate sapiente iusto quia labore aut odit iste natus maxime illum quod, modi voluptate nihil accusamus laboriosam? "
+        },
+        {
+            "idCategory": "2",
+            "strCategory": "Patricio Esquivel",
+            "strCategoryThumb": "img/apifoto1.png",
+            "strCategoryDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident dolorum totam, ipsum quisquam cupiditate sapiente iusto quia labore aut odit iste natus maxime illum quod, modi voluptate nihil accusamus laboriosam? "
+        },
+        {
+            "idCategory": "3",
+            "strCategory": "Juan Maturana",
+            "strCategoryThumb": "img/apifoto1.png",
+            "strCategoryDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident dolorum totam, ipsum quisquam cupiditate sapiente iusto quia labore aut odit iste natus maxime illum quod, modi voluptate nihil accusamus laboriosam? "
+        }
+    ]
+
+}

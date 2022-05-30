@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS Bootstrap v5-->
+   
+    
+
+ 
+   
+
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="{%static 'barb/css/style.css'%}" />
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-info-container">
+    
+        <form class="inputs-container" id="formulario_contacto"  action="" method="POST" id="formulario" enctype = "multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                {{form.as_table}}
+            </div>
+            <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+            <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+            <div class="alert alert-succes" role="alert" id='error'>
+                {{ mensaje }}
+            </div>
+        </form>
+        </div>
+        <img class="image-container" src="{%static 'barb/img/inicio5.png' %}" alt="">
+    </div>
+ 
+    </section>
+</body>
+</html>
